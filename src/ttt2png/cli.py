@@ -46,7 +46,7 @@ def convert_pdf_to_png(pdf_path, output_png_path, target_width=1600, target_heig
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert SolidWorks PDFs to 1600x900 PNGs."
+        description="Convert SolidWorks / CAD PDFs to 1600x900 PNGs."
     )
     parser.add_argument(
         "--batch",
@@ -77,7 +77,9 @@ def main():
 
     # --- INTERACTIVE MODE ---
     print("--- SolidWorks PDF to PNG Converter ---\n")
-
+    print(
+        "Warning: This tool will overwrite PNGs with the same name in this directory\n"
+    )
     pdfs = glob.glob("*.pdf")
     default_pdf = pdfs[0] if pdfs else None
 

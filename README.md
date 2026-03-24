@@ -1,4 +1,4 @@
-# SolidWorks PDF to PNG Converter
+# SolidWorks / CAD PDF to PNG Converter
 
 A simple command-line utility that converts SolidWorks PDF drawings into perfectly centered, unwarped 1600x900 PNG images. 
 
@@ -21,7 +21,7 @@ Because this tool is packaged with a `pyproject.toml`, you can install it global
 uv tool install .
 ```
 
-Once the installation is complete, the `pdf2png` command will be available globally on your system.
+Once the installation is complete, the `ttt2png` command will be available globally on your system.
 
 ## Usage
 
@@ -31,7 +31,7 @@ You can run this tool in any folder on your computer that contains PDF files. It
 Navigate to a folder with your PDFs and run the base command:
 
 ```bash
-uv tool run pdf2png
+uv tool run ttt2png
 ```
 The tool will automatically detect the first PDF in the folder and offer it as the default input. Press `Enter` to accept the defaults, or type a specific filename. It will output a PNG with the same base name.
 
@@ -39,7 +39,7 @@ The tool will automatically detect the first PDF in the folder and offer it as t
 To convert an entire folder of PDFs at once without any manual prompts, use the `--batch` flag:
 
 ```bash
-uv tool run pdf2png --batch
+uv tool run ttt2png --batch
 ```
 This will scan the current directory, process every `.pdf` file it finds, and save the corresponding `.png` files right next to them.
 
@@ -47,5 +47,5 @@ This will scan the current directory, process every `.pdf` file it finds, and sa
 To view the available options from the command line:
 
 ```bash
-uv tool run pdf2png --help
+uv tool run ttt2png --help
 ```

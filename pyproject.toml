@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "TTT_pdf2png"
+name = "ttt2png"
 version = "0.1.0"
-description = "A CLI tool to convert SolidWorks PDFs to 1600x900 PNGs"
+description = "A CLI tool to convert SolidWorks / CAD PDFs to 1600x900 PNGs"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -15,4 +15,4 @@ dependencies = [
 
 [project.scripts]
 # Format: command_name = "module.path:function_name"
-pdf2png = "pdf2png.cli:main"
+ttt2png = "ttt2png.cli:main"
